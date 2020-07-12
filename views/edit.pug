@@ -1,0 +1,8 @@
+h1 edit book
+p title: #{book.title}
+p description: #{book.description}
+form(action="/books/edit/"+book.id,method="POST")
+    lable title
+    input(type="text" Name="title")
+    button edit
+a(href="/") back

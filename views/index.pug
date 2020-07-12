@@ -1,0 +1,10 @@
+h1 List Books
+a(href="/books/create") add Book
+ul  
+    each book in books 
+        li
+            span=book.title
+            span &nbsp   
+            a(href="/books/edit/"+book.id) edit
+            span &nbsp 
+            a(href="/books/delete/"+book.id) delete
